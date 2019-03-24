@@ -2,15 +2,10 @@ package com.yadwee;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-import java.lang.reflect.Array;
-
-public class FifthScreen extends AppCompatActivity {
+public class CRegister extends AppCompatActivity {
     //get the spinner from the xml.
     Spinner spinner1;
     //create a list of items for the spinner.
@@ -22,7 +17,7 @@ public class FifthScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fifth_screen);
+        setContentView(R.layout.activity_cregister);
 
         spinner1 = (Spinner) findViewById(R.id.spinner1);
         arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,Countries);

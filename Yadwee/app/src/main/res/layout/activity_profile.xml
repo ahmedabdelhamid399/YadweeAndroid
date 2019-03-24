@@ -33,7 +33,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="680dp"
         android:background="#9dc3e6"
-        android:text="< Log out"
+        android:text=" Log out"
         android:textSize="17dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

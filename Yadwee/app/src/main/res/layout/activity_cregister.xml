@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#9dc3e6"
-    tools:context=".FifthScreen">
+    tools:context=".CRegister">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -15,7 +15,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="564dp"
+        android:layout_marginBottom="532dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.028"
@@ -30,7 +30,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="584dp"
+        android:layout_marginBottom="560dp"
         android:text="Register"
         android:textColor="#fff"
         android:textSize="40dp"
@@ -88,10 +88,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="68dp"
+        android:background="@drawable/rounded_button"
         android:text="Register"
         android:textColor="#0070c0"
         android:textSize="30dp"
-        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -114,19 +114,19 @@
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="368dp"
-        android:background="@android:drawable/btn_dropdown"
+        android:background="@drawable/rounded_button"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent" />
-
+<!-- @android:drawable/btn_dropdown-->
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="300dp"
@@ -136,7 +136,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="284dp"
-        android:background="@android:drawable/btn_dropdown"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
