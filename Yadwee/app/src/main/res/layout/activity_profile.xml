@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#9dc3e6"
-    tools:context=".Sixth_Screen">
+    tools:context=".Profile">
 
     <Button
         android:id="@+id/btneditprofile"
@@ -31,7 +31,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="680dp"
+        android:layout_marginBottom="628dp"
         android:background="#9dc3e6"
         android:text=" Log out"
         android:textSize="17dp"

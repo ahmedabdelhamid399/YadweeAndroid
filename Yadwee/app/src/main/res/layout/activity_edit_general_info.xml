@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#9dc3e6"
+    tools:context=".EditGeneralInfo">
+
+
+    <LinearLayout
+
+        android:id="@+id/linear_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtveditprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Edit Profile"
+            android:textColor="#9dc3e6"
+            android:textSize="35sp"
+            android:textStyle="normal|bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btngeneralinfo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/clickedbutton"
+                android:ems="10"
+                android:text="General Info"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btneditspecificinfo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_edittext"
+                android:ems="10"
+                android:text="Specific info"
+                android:textAllCaps="false"
+                android:textColor="#9dc3e6"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_account_edit"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_below="@+id/linear_total"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/profileicon" />
+
+    <EditText
+        android:id="@+id/txyusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_account_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#fff"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txyusername"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="My Address"
+        android:inputType="textPostalAddress"
+        android:textColorHint="#fff"
+        android:textSize="25sp" />
+
+    <EditText
+
+        android:id="@+id/txtphonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtaddress"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="My Phone Number"
+        android:layout_margin="20dp"
+        android:textColorHint="#fff"
+        android:textSize="25sp"
+
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btntake"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_total"
+        android:layout_alignRight="@+id/img_account_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/img_account_edit"
+        android:background="@drawable/edit_edittext"
+
+        android:ems="10"
+        android:text="Take"
+        android:textAllCaps="false"
+        android:textColor="#9dc3e6"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btneditphoto"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btntake"
+        android:layout_alignRight="@+id/img_account_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/img_account_edit"
+        android:background="@drawable/edit_edittext"
+        android:ems="10"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:textColor="#9dc3e6"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+
+
+        android:background="@drawable/edit_edittext"
+        android:ems="10"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#9dc3e6"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/btnedit"
+
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btncancel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edit_edittext"
+        android:ems="10"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:textColor="#9dc3e6"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

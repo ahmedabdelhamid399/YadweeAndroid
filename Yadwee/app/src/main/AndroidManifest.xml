@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Sixth_Screen"></activity>
-        <activity android:name=".FifthScreen" />
-        <activity android:name=".SecondScreen" />
+        <activity android:name=".EditSpecificInfo"/>
+        <activity android:name=".EditGeneralInfo" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".Redirect" />
+        <activity android:name=".Profile" />
+        <activity android:name=".CRegister" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

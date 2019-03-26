@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#9dc3e6"
+    tools:context=".EditSpecificInfo"
+
+    >
+
+
+    <LinearLayout
+
+        android:id="@+id/linear_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtveditprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Edit Profile"
+            android:textColor="#9dc3e6"
+            android:textSize="35sp"
+            android:textStyle="normal|bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btngeneralinfo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_edittext"
+                android:ems="10"
+                android:text="General Info"
+                android:textAllCaps="false"
+                android:textColor="#9dc3e6"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/clickedbutton"
+                android:ems="10"
+                android:text="Specific info"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_total"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_change_email"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_rectangle_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Change Your Email"
+                android:textColor="#9dc3e6"
+
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtvemail2"
+
+                android:layout_marginLeft="40dp"
+
+                android:layout_marginTop="0dp"
+
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/icon_email"
+                android:ems="10"
+                android:hint="Enter Your Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#0070c0"
+                android:textColorHint="@android:color/tertiary_text_light" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit__button"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_chnge_password"
+            android:layout_width="377dp"
+            android:layout_height="217dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_rectangle_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtvchangepassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Change Your Password"
+                android:textColor="#9dc3e6"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/txtenterpassword"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtvchangepassword"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="0dp"
+                android:drawableLeft="@drawable/icon_password"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#0070c0"
+                android:textColorHint="@android:color/tertiary_text_light" />
+
+            <EditText
+                android:id="@+id/txtconfirmpassword"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtvchangepassword"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_edittext"
+                android:drawableLeft="@drawable/icon_password"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="#0070c0"
+                android:textColorHint="@android:color/tertiary_text_light" />
+
+
+            <Button
+                android:id="@+id/btn_confirm_password"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit__button"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/linear_change_naum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_rectangle_white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtvpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="Change Your Phone"
+                android:textColor="#9dc3e6"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+
+                />
+
+
+            <EditText
+                android:id="@+id/txtpassword"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtvchangepassword"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/edit_edittext"
+                android:drawableLeft="@drawable/icon_phone"
+                android:ems="10"
+                android:hint="Your Phone Number"
+
+                android:inputType="phone"
+                android:textColor="#0070c0"
+
+                android:textColorHint="@android:color/tertiary_text_light" />
+
+
+            <Button
+                android:id="@+id/btn_confirm_phone"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit__button"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
