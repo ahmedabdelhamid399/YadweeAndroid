@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search"
+    android:background="#fff"
+    >
+
+
+    <LinearLayout
+
+        android:id="@+id/linear_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#9dc3e6"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtveditprofile"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/circle_person"
+            android:paddingLeft="8dp"
+            android:hint="  User Name"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/button2"
+        android:layout_width="275dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/linear"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit__button"
+        android:ems="10"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+
+        android:id="@+id/linear_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_total"
+        android:background="#9dc3e6"
+        android:orientation="vertical">
+
+
+        <Spinner
+
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/country_arrays"
+            android:spinnerMode="dropdown" />
+
+
+        <Spinner
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:entries="@array/price"
+            android:spinnerMode="dropdown"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_price"
+        android:layout_alignParentLeft="true"
+        android:background="#9dc3e6"
+        android:orientation="vertical"
+
+        >
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/category"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/kind"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/kind"
+            android:spinnerMode="dropdown"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

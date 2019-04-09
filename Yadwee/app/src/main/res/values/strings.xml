@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Yadwee</string>
+    <string-array name="country_arrays">
+        <item>Alexandria</item>
+        <item>cairo</item>
+        <item>Sharm elsheikh</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>clothes</item>
+    </string-array>
+
+
+    <string-array name="kind">
+        <item>T-shirt</item>
+
+    </string-array>
+
+
+    <string-array name="price">
+        <item>50 LE</item>
+        <item>60 LE</item>
+        <item>70 LE</item>
+    </string-array>
 </resources>

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".EditSpecificInfo"/>
+        <activity android:name=".Result"></activity>
+        <activity android:name=".ViewResult" />
+        <activity android:name=".Search" />
+        <activity android:name=".EditSpecificInfo" />
         <activity android:name=".EditGeneralInfo" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
